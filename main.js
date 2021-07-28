@@ -242,6 +242,8 @@ const pets = [
 
 
 
+
+
 // const outEl = document.querySelector("#output");
 
 // pets.forEach((pet) => {
