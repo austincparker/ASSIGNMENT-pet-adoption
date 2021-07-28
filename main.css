@@ -2,6 +2,10 @@ body {
     font-family: sans-serif;
   }
 
+  h5 {
+    color: #6d6d6d;
+  }
+
    .btn-container {
     display: flex;
     justify-content: center;
@@ -9,6 +13,11 @@ body {
 
   .btn {
     margin: 20px;
+    color: white;
+  }
+
+  .btn:hover {
+    color: whitesmoke;
   }
 
   .pet-container {
@@ -18,7 +27,7 @@ body {
   } 
 
   .card {
-    border: 3px solid black;
+    border: 1px solid lightgrey;
     margin: 10px;
     width: 300px;
     text-align: center;
@@ -27,17 +36,26 @@ body {
   .card img {
     margin: auto;
     width: 200px;
+    border: 1px solid lightgrey;
+    padding: 9px;
+  }
+
+  .pet-text {
+    margin: 10px 10px 0 10px;
   }
 
   .petname-box {
     margin: 0 0 20px 0;
+    padding: 10px 5px 5px 5px;
     background-color: lightgrey;
   }
 
   .pettype-box {
     background-color: lightgrey;
+    padding: 8px 0 8px 0;
   }
 
   .pettype-box p {
     text-transform: capitalize;
+    margin: 0;
   }
