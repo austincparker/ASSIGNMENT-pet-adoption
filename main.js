@@ -215,15 +215,15 @@ const addTypeColor = (petsArray) => {
   petsArray.forEach((pet) => {
     if (pet.type === "cat") {
       pet.typeColorBkg = "lightblue";
-      pet.typeColorTxt = "darkblue";
+      pet.typeColorTxt = "royalblue";
     } 
     if (pet.type === "dog") {
       pet.typeColorBkg = "lightgreen";
-      pet.typeColorTxt = "darkgreen";
+      pet.typeColorTxt = "forestgreen";
     } 
     if (pet.type === "dino") {
       pet.typeColorBkg = "lightyellow";
-      pet.typeColorTxt = "orange";
+      pet.typeColorTxt = "goldenrod";
     } 
 
   });
@@ -246,6 +246,17 @@ const buttons = () => {
   `;
 
   renderToDom("#btnContainer", domString);
+}
+
+const deletePet = (event) => {
+  const targetId = event.target.id;
+  const targetText = event.target.outerText;
+
+  if (targetText === "Delete") {
+    pets.splice(targetId, 1);
+    petBuilder(pets);
+  }
+
 }
 
 const filterPets = (array, type) => {
@@ -282,7 +293,7 @@ const petBuilder = (petsArray) => {
       <div class="pet-text">
         <p>${pet.color}</p>
         <p>${pet.specialSkill}</p>
-      <a class="btn btn-danger">Delete</a>
+      <a class="btn btn-danger" id=${i}>Delete</a>
       </div>
       <div class="pettype-box" style="background-color: ${pet.typeColorBkg}; color: ${pet.typeColorTxt}">
         <p>${pet.type}</p>
@@ -299,6 +310,8 @@ const buttonEvents = () => {
   document
     .querySelector("#btnContainer")
     .addEventListener("click", handleButtonClick);
+
+    document.querySelector("#petContainer").addEventListener("click", deletePet);
 }
 
 const init = () => {
