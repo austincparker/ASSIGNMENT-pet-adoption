@@ -1,20 +1,43 @@
 body {
     font-family: sans-serif;
   }
-  
-  .cards {
+
+   .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    margin: 20px;
+  }
+
+  .pet-container {
     display: flex;
     flex-wrap: wrap;
-  }
-  
+    justify-content: center;
+  } 
+
   .card {
     border: 3px solid black;
-    border-radius: 1rem;
     margin: 10px;
-    padding: 10px;
     width: 300px;
+    text-align: center;
   }
   
   .card img {
+    margin: auto;
     width: 200px;
+  }
+
+  .petname-box {
+    margin: 0 0 20px 0;
+    background-color: lightgrey;
+  }
+
+  .pettype-box {
+    background-color: lightgrey;
+  }
+
+  .pettype-box p {
+    text-transform: capitalize;
   }
