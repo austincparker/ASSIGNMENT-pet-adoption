@@ -200,7 +200,7 @@ const pets = [
     color: "Green",
     specialSkill: "Gives hugs with appropriate pressure and for the right length of time.",
     type: "cat",
-    imageUrl: "http://img.izismile.com/img/img2/20090219/cats_02.jpg"
+    imageUrl: "https://www.womansworld.com/wp-content/uploads/2020/08/cat-hug-11.jpg"
   },
   {
     name: "Lucy",
@@ -211,6 +211,25 @@ const pets = [
   }
 ];
 
+const addTypeColor = (petsArray) => {
+  petsArray.forEach((pet) => {
+    if (pet.type === "cat") {
+      pet.typeColorBkg = "lightblue";
+      pet.typeColorTxt = "darkblue";
+    } 
+    if (pet.type === "dog") {
+      pet.typeColorBkg = "lightgreen";
+      pet.typeColorTxt = "darkgreen";
+    } 
+    if (pet.type === "dino") {
+      pet.typeColorBkg = "lightyellow";
+      pet.typeColorTxt = "orange";
+    } 
+
+  });
+
+};
+
 const petContainer = document.querySelector("#petContainer");
 
 const renderToDom = (divId, textToPrint) => {
@@ -220,13 +239,35 @@ const renderToDom = (divId, textToPrint) => {
 
 const buttons = () => {
   const domString = `
-  <button type="button" class="btn btn-danger">All</button>
-  <button type="button" class="btn btn-info">Cats</button>
-  <button type="button" class="btn btn-success">Dogs</button>
-  <button type="button" class="btn btn-warning">Dinos</button>
+  <button type="button" class="btn btn-danger" id="all">All</button>
+  <button type="button" class="btn btn-info" id="cat">Cats</button>
+  <button type="button" class="btn btn-success" id="dog">Dogs</button>
+  <button type="button" class="btn btn-warning" id="dino">Dinos</button>
   `;
 
   renderToDom("#btnContainer", domString);
+}
+
+const filterPets = (array, type) => {
+  return array.filter((petObject) => petObject.type === type);
+}
+
+const handleButtonClick = (event) => {
+  if (event.target.id === "all") {
+    petBuilder(pets);
+  }
+  if (event.target.id === "cat") {
+    const catPets = filterPets(pets, event.target.id);
+    petBuilder(catPets);
+  }
+  if (event.target.id === "dog") {
+    const catPets = filterPets(pets, event.target.id);
+    petBuilder(catPets);
+  }
+  if (event.target.id === "dino") {
+    const catPets = filterPets(pets, event.target.id);
+    petBuilder(catPets);
+  }
 }
 
 const petBuilder = (petsArray) => {
@@ -235,13 +276,15 @@ const petBuilder = (petsArray) => {
     domString += `
     <div class="card" style="width: 18rem;">
       <div class="petname-box">
-        <h5 class="card-title">${pet.name}</h5>
+        <h5>${pet.name}</h5>
       </div>
       <img src="${pet.imageUrl}" class="card-img-top" alt="...">
-      <p class="card-text">${pet.color}</p>
-      <p class="card-text">${pet.specialSkill}</p>
+      <div class="pet-text">
+        <p>${pet.color}</p>
+        <p>${pet.specialSkill}</p>
       <a class="btn btn-danger">Delete</a>
-      <div class="pettype-box">
+      </div>
+      <div class="pettype-box" style="background-color: ${pet.typeColorBkg}; color: ${pet.typeColorTxt}">
         <p>${pet.type}</p>
       </div>
     </div>
@@ -252,9 +295,16 @@ const petBuilder = (petsArray) => {
   console.log(domString);
 };
 
+const buttonEvents = () => {
+  document
+    .querySelector("#btnContainer")
+    .addEventListener("click", handleButtonClick);
+}
+
 const init = () => {
   buttons();
-  // buttonEvents();
+  buttonEvents();
+  addTypeColor(pets);
   petBuilder(pets);
 }
 
