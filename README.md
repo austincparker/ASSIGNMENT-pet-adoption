@@ -8,7 +8,8 @@
 - Did some more styling to make it look pretty.
 - Added a non-functional 'delete' button.
 - Added filtering functionality to the top buttons. (yay, it worked)
-- 
+- Added delete functionality using event.target.outerText to select the 'Delete' button.
+
 <!-- 
 ## Setup
 * Clone this repo to your exercises directory
