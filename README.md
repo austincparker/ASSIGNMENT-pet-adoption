@@ -10,6 +10,8 @@
 - Added filtering functionality to the top buttons. (yay, it worked)
 - Added delete functionality using event.target.outerText to select the 'Delete' button.
 
+Loom: https://www.loom.com/share/a48ca13e425b4e73a177871aa7085bf3
+
 <!-- 
 ## Setup
 * Clone this repo to your exercises directory
