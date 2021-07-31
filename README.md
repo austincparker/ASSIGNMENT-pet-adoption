@@ -10,7 +10,7 @@ This was our first project where we rendered to the DOM. We were given an array 
 
 ## Screenshot of Project
 
-https://github.com/austincparker/ASSIGNMENT-pet-adoption/blob/main/pet-adoption-ss.jpg
+https://u.cubeupload.com/austincparker/petadoptionss.jpg
 
 ## List of Features
 
@@ -29,31 +29,29 @@ https://github.com/austincparker/ASSIGNMENT-pet-adoption/blob/main/pet-adoption-
 
 Code Snippet: 
 
-`const addTypeColor = (petsArray) => {
-  petsArray.forEach((pet) => {
-    if (pet.type === "cat") {
-      pet.typeColorBkg = "lightblue";
-      pet.typeColorTxt = "royalblue";
-    } 
-    if (pet.type === "dog") {
-      pet.typeColorBkg = "lightgreen";
-      pet.typeColorTxt = "forestgreen";
-    } 
-    if (pet.type === "dino") {
-      pet.typeColorBkg = "lightyellow";
-      pet.typeColorTxt = "goldenrod";
-    } 
+`const addTypeColor = (petsArray) => {`
+  `petsArray.forEach((pet) => {`
+    `if (pet.type === "cat") {`
+      `pet.typeColorBkg = "lightblue";`
+      `pet.typeColorTxt = "royalblue";`
+    `} `
+    `if (pet.type === "dog") {`
+      `pet.typeColorBkg = "lightgreen";`
+      `pet.typeColorTxt = "forestgreen";`
+    `}` 
+    `if (pet.type === "dino") {`
+      `pet.typeColorBkg = "lightyellow";`
+      `pet.typeColorTxt = "goldenrod";`
+    `}` 
 
-  });
+  `});`
 
-};`
+`};`
 
 - Did some more styling to make it look pretty.
 - Added a non-functional 'delete' button.
 - Added filtering functionality to the top buttons. (yay, it worked)
 - Added delete functionality using event.target.outerText to select the 'Delete' button.
-
-
 
 ## Loom: 
 
