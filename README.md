@@ -29,24 +29,22 @@ This was our first project where we rendered to the DOM. We were given an array 
 
 Code Snippet: 
 
-`const addTypeColor = (petsArray) => {`
-  `petsArray.forEach((pet) => {`
-    `if (pet.type === "cat") {`
-      `pet.typeColorBkg = "lightblue";`
-      `pet.typeColorTxt = "royalblue";`
-    `} `
-    `if (pet.type === "dog") {`
-      `pet.typeColorBkg = "lightgreen";`
-      `pet.typeColorTxt = "forestgreen";`
-    `}` 
-    `if (pet.type === "dino") {`
-      `pet.typeColorBkg = "lightyellow";`
-      `pet.typeColorTxt = "goldenrod";`
-    `}` 
-
-  `});`
-
-`};`
+`const addTypeColor = (petsArray) => {
+  petsArray.forEach((pet) => {
+    if (pet.type === "cat") {
+      pet.typeColorBkg = "lightblue";
+      pet.typeColorTxt = "royalblue";
+    }; 
+    if (pet.type === "dog") {
+      pet.typeColorBkg = "lightgreen";
+      pet.typeColorTxt = "forestgreen";
+    } 
+    if (pet.type === "dino") {
+      pet.typeColorBkg = "lightyellow";
+      pet.typeColorTxt = "goldenrod";
+    };
+  });
+};`
 
 - Did some more styling to make it look pretty.
 - Added a non-functional 'delete' button.
