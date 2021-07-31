@@ -1,4 +1,4 @@
-# Adoption Website
+# Pet Adoption Project
 
 ## Deployed App
 
