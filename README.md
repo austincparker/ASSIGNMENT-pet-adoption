@@ -10,7 +10,7 @@ This was our first project where we rendered to the DOM. We were given an array 
 
 ## Screenshot of Project
 
-https://nimb.ws/vefW57
+https://nimbusweb.me/box/attachment/5865696/2wzorfehr90bg4wdz8xz/qbbJskhI3g1furt7/screenshot-127.0.0.1_8080-2021.07.31-13_19_56.png
 
 ## List of Features
 
@@ -25,7 +25,11 @@ https://nimb.ws/vefW57
 - Created div elements in html file and added appropriate ids.
 - Created forEach loops to cycle through pets array and print to dom
 - Did some styling to make sure the boxes displayed correctly.
-- Created a function to add a "typeColor" to each object in the pets array depending on what type of animal it is. Called this function in init before the petBuilder function. This is how I got each card to display the right color at the bottom. Code Snippet: `const addTypeColor = (petsArray) => {
+- Created a function to add a "typeColor" to each object in the pets array depending on what type of animal it is. Called this function in init before the petBuilder function. This is how I got each card to display the right color at the bottom. 
+
+Code Snippet: 
+
+`const addTypeColor = (petsArray) => {
   petsArray.forEach((pet) => {
     if (pet.type === "cat") {
       pet.typeColorBkg = "lightblue";
@@ -43,6 +47,7 @@ https://nimb.ws/vefW57
   });
 
 };`
+
 - Did some more styling to make it look pretty.
 - Added a non-functional 'delete' button.
 - Added filtering functionality to the top buttons. (yay, it worked)
