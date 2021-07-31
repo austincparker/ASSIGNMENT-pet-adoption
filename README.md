@@ -10,7 +10,7 @@ This was our first project where we rendered to the DOM. We were given an array 
 
 ## Screenshot of Project
 
-https://nimbusweb.me/box/attachment/5865696/2wzorfehr90bg4wdz8xz/qbbJskhI3g1furt7/screenshot-127.0.0.1_8080-2021.07.31-13_19_56.png
+https://u.cubeupload.com/austincparker/petadoptionss.jpg
 
 ## List of Features
 
