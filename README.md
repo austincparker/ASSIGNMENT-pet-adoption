@@ -28,8 +28,7 @@ This was our first project where we rendered to the DOM. We were given an array 
 - Did some styling to make sure the boxes displayed correctly.
 - Created a function to add a "typeColor" to each object in the pets array depending on what type of animal it is. Called this function in init before the petBuilder function. This is how I got each card to display the right color at the bottom. 
 
-Code Snippet: 
-
+#### Code Snippet
 ```
 const addTypeColor = (petsArray) => {
   petsArray.forEach((pet) => {
