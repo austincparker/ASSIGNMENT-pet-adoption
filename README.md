@@ -4,7 +4,7 @@
 
 https://acp-pet-adoption.netlify.app/
 
-## Overview of the Project
+## Overview of Project
 
 This was our first project where we rendered to the DOM. We were given an array of objects (pets) and asked to design an app that displayed those objects in bootstrap cards. We were also asked to add filtering functionality and delete functionality.
 
