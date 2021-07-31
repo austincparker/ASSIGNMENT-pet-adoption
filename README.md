@@ -12,6 +12,7 @@ This was our first project where we rendered to the DOM. We were given an array 
 
 ![pet-adoption ss](https://user-images.githubusercontent.com/70224936/127749709-2a24449e-15fc-4de1-a2a4-a7c7e3f43bd2.jpg)
 
+
 ## List of Features
 
 - Populated cards of animals up for adoption complete with a photo, special skill, color, and name.
