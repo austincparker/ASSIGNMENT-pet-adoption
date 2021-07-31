@@ -29,7 +29,8 @@ This was our first project where we rendered to the DOM. We were given an array 
 
 Code Snippet: 
 
-`const addTypeColor = (petsArray) => {
+```
+const addTypeColor = (petsArray) => {
   petsArray.forEach((pet) => {
     if (pet.type === "cat") {
       pet.typeColorBkg = "lightblue";
@@ -44,7 +45,8 @@ Code Snippet:
       pet.typeColorTxt = "goldenrod";
     };
   });
-};`
+};
+```
 
 - Did some more styling to make it look pretty.
 - Added a non-functional 'delete' button.
