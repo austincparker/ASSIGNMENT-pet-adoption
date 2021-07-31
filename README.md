@@ -10,7 +10,7 @@ This was our first project where we rendered to the DOM. We were given an array 
 
 ## Screenshot of Project
 
-https://u.cubeupload.com/austincparker/petadoptionss.jpg
+
 
 ## List of Features
 
